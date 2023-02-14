@@ -50,6 +50,7 @@ img {
     vertical-align: text-top;
     float: left;
     padding-right: 30px;
+    border: 5px solid #555;
 }
 img:hover {
     -webkit-transform: scaleX(-1);
