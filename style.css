@@ -1,0 +1,318 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; 
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+body{
+    font-family: monospace;
+    display: list-item;
+}
+nav{
+    background: #007be6ac;
+    height: 80px;
+    width: 100%;
+}
+
+label.heading{
+
+    color: rgb(7, 5, 37);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+a.active,a:hover{
+    background: #a77cf2d3;
+    transition: .5s;
+    
+
+}
+
+a:is(:link,:active, :visited).active{
+    background: #bd9bf9;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(251, 130, 152);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+
+.body-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 5vh;
+    background-color: rgb(239, 216, 112);
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 9999;
+
+}
+
+p{
+
+        color: rgb(32, 23, 45);
+        background-color: antiquewhite;
+        font-family: courier;
+        font-size: 160%;
+        border: 2px solid powderblue;
+        padding: 30px;
+   
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 5vh;
+    background-color: #007be6ac;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+section{
+    width: 100%;
+    height: 150%;
+    justify-content: center;
+    display: center;
+    padding: 30px;
+}
+
+@media (max-width: 952px){
+    label.heading{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-top: 70px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #8563b0;
+        top: 150px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+        z-index: 9999;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+   
+    }
+    a:hover,a.active{
+        background: none ;
+        color: #ad74f3;
+   
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+.fcf-body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0000ff;
+    text-align: left;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04131d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+image {
+
+    object-position: center;
+    width: 350px
+}
+
+  img {
+    border: 5px;
+    border-radius: 5px;
+    width: 355px;
+    object-position: 50% 50%;
+    margin-right: 0em;
+    background-color: antiquewhite;
+    
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .panel-body{
+    color: rgb(58, 9, 155);
+    text-align: center;
+    letter-spacing: 0px; 
+    font-family: "Lucida Console", "Courier New", monospace; 
+    
+  }
+ h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 5vh;
+    background-color: rgb(239, 216, 112);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: #007be6;
+}
+
+h4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 5vh;
+     background-color: rgb(239, 216, 112);
+     font-family: 'Courier New', Courier, monospace;
+     
+ 
+ }
+
+ h5{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 5vh;
+    background-color: #007be6ac;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+ }
+
+
+ li{
+ 
+    color: rgb(58, 9, 155);
+    text-align: center;
+    letter-spacing: 0px; 
+    font-family: "Lucida Console", "Courier New", monospace; 
+}
+
+#map { 
+    
+    height: 350px;
+    object-position: center;
+}
+.icon{
+    width: 100%;
+    height: 5vh;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.slogan h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #007be6;
+  font-family: 'Courier New', Courier, monospace;
+}
+.foot {
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+.foot footer{
+    padding-top: 2.5%;
+    width: 100%;
+    min-height: 5vh;
+    background-color: #007be6ac;
+}
