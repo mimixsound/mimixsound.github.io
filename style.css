@@ -64,8 +64,8 @@ a:is(:link,:active, :visited).active{
 .checkbtn{
     font-size: 30px;
     color: rgb(251, 130, 152);
-    float: right;
-    line-height: 70px;
+    float: center;
+    line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
