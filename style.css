@@ -125,3 +125,18 @@ body {
   option {
     text-align: center;
   }
+
+
+@media (max-width: 952px){
+    label.heading{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-top: 85px;
+        position: center;
+        
+    }
