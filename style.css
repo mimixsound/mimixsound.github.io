@@ -41,7 +41,7 @@ body {
   .nav{
     background: #504f4c1d;
     height: 100px;
-    width: 100px;
+    width: auto;
     background-color: transparent;
 }
 
