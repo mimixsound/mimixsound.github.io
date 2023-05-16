@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Short Task</title>
+    <meta name="presentation" content="comparison of Hybrid APP technologies">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json" />
+
+  </head>
+
+
+
+  <body>
+
+    <header>
+        <div class="container-fluid ">
+        <h2 id="myHead">PhoneGa VS Flutter, AND React Native </h2>
+        <h4>Why Hybrid Mobile Apps?</h4>
+        <h5 id="sub-head">
+        <ul>
+            <li>1. Use HTML/CSS/JavaScript </li>
+            <li>2. Combination of native and web apps </li>
+            <li>3. Ran inside of a container/webview </li>
+        </ul>
+        </h5>
+    </div>
+    </header>
+
+
+    <div class="slide">
+      <div>
+        <image src="image/flutter-logo.svg" height="50" width="50"/>
+        <h3>Flutter</h3>
+        <iframe src="iframe1.htm" height="200" width="400" title="Iframe Example">
+        </iframe>
+      </div>
+    </div>
+    <div class="slide">
+      <div>
+        <image src="image/phonegap.svg" height="50" width="50" />
+        <h3>Phonegap</h3>
+        <iframe src="iframe2.htm" height="200" width="400" title="Iframe Example"></iframe>
+      
+      </div>
+    </div>
+    <div class="slide">
+      <div>
+        <image src="image/react.svg" height="50" width="50" />
+        <h3>React Native</h3>
+
+        <iframe src="iframe3.htm" height="200" width="400" title="Iframe Example"></iframe>
+        
+   
+      </div>
+    </div>
+
+
+
+
+
+    <link rel="service-worker" href="service-worker.js" />
+
+    <script>
+    if ('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+
+    document.getElementById("bg-select").addEventListener("change", function() {
+    var selectedBg = document.getElementById("bg-select").value;
+    document.body.className = selectedBg;
+});
+
+
+
+</script>
+
+
+  </body>
+</html>
