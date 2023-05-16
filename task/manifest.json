@@ -1,0 +1,28 @@
+{
+    "name": "ShortTask",
+    "short_name": "ShortTask",
+    "start_url": "/",
+    "display_override": ["window-control-overlay", "minimal-ui"],
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+
+      {
+        "src": "/image/flutter-logo.svg",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/image/phonegap.svg",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/image/react.svg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "background_image": "/image/background.jpg" 
+  }
